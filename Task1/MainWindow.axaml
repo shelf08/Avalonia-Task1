@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Task1.MainWindow"
+        Title="Task1" Width="500" Height="400">
+    <StackPanel Margin="10" Spacing="10">
+        <TextBlock Text="Демонстрация работы линейного списка" FontSize="16" HorizontalAlignment="Center"/>
+        
+        <StackPanel Orientation="Horizontal" Spacing="5">
+            <TextBox x:Name="InputTextBox" Width="200"/>
+            <Button Content="Добавить" Click="OnAddClick"/>
+            <Button Content="Удалить текущий" Click="OnRemoveClick"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Spacing="5">
+            <Button Content="Следующий" Click="OnNextClick"/>
+            <Button Content="В начало" Click="OnStartClick"/>
+        </StackPanel>
+        
+        <TextBlock x:Name="StatusText" FontWeight="Bold"/>
+        <TextBlock x:Name="CurrentItemText"/>
+        <TextBlock x:Name="CountText"/>
+        <TextBlock x:Name="IsEmptyText"/>
+    </StackPanel>
+</Window>
